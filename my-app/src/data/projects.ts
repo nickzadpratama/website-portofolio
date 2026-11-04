@@ -6,7 +6,8 @@ export const projects: readonly Project[] = [
     title: "E-commerce Platform",
     description:
       "Platform e-commerce full-stack dengan fitur keranjang belanja, manajemen produk, dan sistem pembayaran.",
-    imageUrl: "/images/projects/ecommerce.png",
+    imageUrl: "/images/ecommerce.png",
+    liveUrl: "https://nickzz-git-main-nickz1.vercel.app/",
     techStack: [
       { name: "Next.js" },
       { name: "TypeScript" },
@@ -23,7 +24,9 @@ export const projects: readonly Project[] = [
     title: "Instagroom Mobile",
     description:
       "Aplikasi mobile untuk layanan grooming dengan fitur booking, review, dan profil penyedia layanan.",
-    imageUrl: "/images/projects/instagroom.png",
+    imageUrl: "/images/ig.png",
+    liveUrl:
+      "https://expo.dev/accounts/nickzad/projects/instagram/builds/a9fac095-cf3e-4ce6-aedd-a938038f379b",
     techStack: [
       { name: "React Native" },
       { name: "Expo" },
@@ -40,7 +43,8 @@ export const projects: readonly Project[] = [
     title: "Football Profile",
     description:
       "Aplikasi web profil pemain sepak bola dengan integrasi AI untuk analisis data pemain.",
-    imageUrl: "/images/projects/football-profile.png",
+    imageUrl: "/images/football.png",
+    liveUrl: "https://ip-nickzadpratama-uxyd.vercel.app",
     techStack: [
       { name: "React" },
       { name: "Express.js" },
@@ -57,7 +61,8 @@ export const projects: readonly Project[] = [
     title: "Papikos CMS",
     description:
       "Content Management System untuk platform pencarian kos-kosan dengan fitur CRUD lengkap.",
-    imageUrl: "/images/projects/papikos.png",
+    imageUrl: "/images/public.png",
+    liveUrl: "https://papikos-5v7s.vercel.app/",
     techStack: [
       { name: "React" },
       { name: "Node.js" },
@@ -70,4 +75,3 @@ export const projects: readonly Project[] = [
     ],
   },
 ] as const;
-

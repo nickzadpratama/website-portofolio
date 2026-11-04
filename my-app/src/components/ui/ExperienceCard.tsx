@@ -3,6 +3,10 @@ import { formatDate } from "@/lib/utils";
 import type { ExperienceCardProps } from "@/types";
 
 export function ExperienceCard({ experience, isLast = false }: ExperienceCardProps) {
+  const periodText =
+    experience.period ??
+    `${formatDate(experience.startDate)} — ${formatDate(experience.endDate)}`;
+
   return (
     <div className={cn("relative pl-8", !isLast && "border-l-2 border-gray-200 pb-8")}>
       {/* Timeline dot */}
@@ -12,7 +16,7 @@ export function ExperienceCard({ experience, isLast = false }: ExperienceCardPro
         <h3 className="text-lg font-semibold text-gray-900">{experience.role}</h3>
         <p className="text-gray-600">{experience.company}</p>
         <p className="mt-1 text-sm text-gray-500">
-          {formatDate(experience.startDate)} — {formatDate(experience.endDate)}
+          {periodText}
         </p>
 
         <p className="mt-3 text-sm text-gray-700 leading-relaxed">

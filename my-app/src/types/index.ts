@@ -84,6 +84,7 @@ export interface Experience {
   readonly location?: string;
   readonly startDate: string;
   readonly endDate: string | null;
+  readonly period?: string;
   readonly description: string;
   readonly responsibilities: readonly string[];
 }
@@ -95,15 +96,16 @@ export interface Education {
   readonly institution: string;
   readonly degree: string;
   readonly field: string;
-  readonly startYear: number;
-  readonly endYear: number | null;
+  readonly period?: string;
+  readonly startYear?: number;
+  readonly endYear?: number | null;
 }
 
 /** Data sertifikasi profesional */
 export interface Certification {
   readonly name: string;
   readonly issuer: string;
-  readonly year: number;
+  readonly year: number | string;
   readonly credentialUrl?: string;
 }
 
