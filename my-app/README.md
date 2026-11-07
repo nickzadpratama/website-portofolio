@@ -112,7 +112,7 @@ my-app/
 
 ---
 
-## 🛠️ Panduan Memulai (Getting Started)
+## 🛠️ Panduan Memulai (Started)
 
 ### 1. Prasyarat
 Pastikan Anda telah menginstal:
